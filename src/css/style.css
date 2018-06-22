@@ -1,0 +1,507 @@
+/* BASE STYLES ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #382530;
+}
+
+section {
+    overflow: hidden;
+    padding: 3em;
+}
+
+section:nth-child(2n + 1) {
+    background-color: #514740;
+}
+
+section:nth-child(2n + 0) {
+    background-color: #382530;
+}
+
+li {
+    list-style: none;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+}
+
+p {
+    text-transform: none;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+
+h2 {
+    letter-spacing: .8em;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover, .active {
+    color: #e0b3a3;
+}
+
+button {
+    padding: 1em 2em;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #3f3732;
+    font-weight: bold;
+}
+
+col-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hide {
+    display: none;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.show {
+    display: block;
+}
+
+/* HEADER ========================================= */
+
+header {
+    height: 100vh;
+    background-color: transparent;
+}
+
+nav-collapse {
+    display: block;
+}
+
+header nav {
+    z-index: 1;
+    background: #645951;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    margin: 0 auto;
+    width: 100vw;
+    box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, .2);
+}
+
+header nav a {
+    padding: 1.4em 2.5em;
+}
+
+.nav-left {
+    float: left;
+}
+
+.nav-right {
+    float: right;
+}
+
+.nav-logo {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+    font-weight: 900;
+}
+
+.outer {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin-top: 3em;
+    font-size: 5em;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.bg-box {
+    position: relative;
+    height: 100vh;
+    top: 40px;
+    background: url('/images/abstract-art-astronomy-220071.jpg');
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.midground {
+    height: 100px;
+    width: 100%;
+    background-image: url('/images/SP_title.png');
+    background-size: 22em;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    filter: invert(100%);
+}
+
+.foreground {
+    width: 100%;
+    height: 25em;
+    background-image: url('/images/flower_sakura.svg');
+    background-size: 35em;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 14%;
+    top: 31em;
+    filter: invert(100%) blur(2px);
+}
+
+.background {
+    width: 100%;
+    height: 8em;
+    background-image: url('/images/flower_geo.svg');
+    background-size: 5em;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -25%;
+    top: 12em;
+    filter: invert(100%) blur(1px);
+}
+
+/* CAROUSEL ========================================= */
+
+.slick-carousel {
+    width: 70%;
+    margin: 0 auto;
+    height: 50%;
+    padding: 2em;
+}
+
+.slick-carousel a {
+    width: 100%;
+    padding: 0;
+}
+
+.slick-carousel img {
+    width: 100%;
+}
+
+.slick-dots {
+    left: 0;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    font-size: 27px;
+    opacity: .3;
+}
+
+/* ABOUT ========================================= */
+
+#about h5 {
+    margin: 0 auto;
+    text-transform: none;
+    padding: 2em 4em;
+    font-size: 1.4em;
+}
+
+#about h2 {
+}
+
+#about {
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#about div div{
+    font-size: 1.5em;
+    align-self: center;
+}
+
+#about img {
+    margin: 1em;
+    filter: invert(100%);
+}
+
+.about-bg-box {
+    position: relative;
+    height: 106vh;
+    top: -5em;
+    width: 100vw;
+    left: -3em;
+    background: url('/images/abstract-art-astronomy-220071.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.about-foreground {
+    width: 100%;
+    height: 25em;
+    background-image: url('/images/flower_sakura.svg');
+    background-size: 35em;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 14%;
+    top: 61em;
+    filter: invert(100%) blur(2px);
+    z-index: -1;
+}
+
+/* PROJECTS ========================================= */
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2em;
+    justify-content: center;
+}
+
+.project-visual {
+    display: flex;
+    flex-direction: column;
+    margin-right: .4em;
+    width: 33%;
+}
+
+.project-visual img {
+    max-width: 80%;
+    margin: 2px;
+}
+
+.project-img {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 2px auto;
+}
+
+/* IMG SIZE = 800 x 500 */
+.img1 {
+    background: url('/images/proj4_caro.png') top center;
+    background-size: cover;
+}
+.img2 {
+    background: url('/images/shopping-cart-img1.png') top right;
+    background-size: cover;
+}
+.img3 {
+    background: url('/images/monument-img1.png') top center;
+}
+
+.project-details {
+    width: 70%;
+    height: 80%;
+    background-color: transparent;
+    border-radius: 2em;
+    padding: 1em;
+    color: #fff;
+}
+
+#project2 button{
+    color: #33222b;
+}
+
+.detail-container {
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.detail-container ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.detail-container li {
+    padding: 0 1em;
+    font-size: 1.2em;
+}
+
+
+/* TESTAMONIALS========================================= */
+
+#about, #testamonials {
+    background: url('/images/abstract-art-astronomy-220071.jpg');
+}
+
+#testamonials {
+    min-height: 20em;
+}
+
+#testamonials h3{
+    font-size: 3em;
+    font-family: 'Averia Libre', sans-serif;
+}
+
+#testamonials p{
+    font-size: 1.5em;
+    font-family: 'Averia Libre', sans-serif;
+}
+
+/* CONTACT ========================================= */
+
+#contact {
+    background-color: #382530;
+}
+
+form {
+    display: inline-block;
+    width: 40em;
+}
+
+.contact .row div {
+    width: 100%;
+}
+
+.contact .row {
+    padding: 2em;
+}
+
+input, textarea {
+    margin: .5em auto;
+    padding: 1em 1em;
+    font-weight: bold;
+    border: 2px solid transparent;
+    background-color: rgba(255, 255, 255, .5);
+    color: #514740;
+    width: 100%;
+}
+
+textarea {
+    height: 200px;
+}
+
+.contact-button {
+    width: 100px;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #514740
+}
+
+
+/* FOOTER ========================================= */
+
+footer {
+    padding: 1em;
+    position: relative;
+    background: url('/images/abstract-art-astronomy-220071.jpg');
+    background-position: top;
+    background-size: cover;
+}
+
+footer a {
+    font-size: 2em;
+    padding: 1.4em 1em;
+}
+
+/* ANIMATIONS ========================================= */
+
+@keyframes spinner {
+    100% { transform: rotate(360deg); }
+}
+
+/* MEDIA QUERIES ========================================= */
+
+@media screen and (max-width: 800px){
+    html {
+        font-size: 12pt;
+    }
+
+    header nav {
+        height: auto;
+    }
+
+    .nav-collapse {
+        background: #645951;
+        border-bottom: 1px solid #4b433d;
+    }
+
+    .nav-collapse {
+        background-image: linear-gradient(#645951, #786862);
+    }
+
+    header nav div {
+        background-image: linear-gradient(#645951, #786862);
+        border-bottom: 1px solid #4b433d;
+    }
+
+    .nav-logo {
+        z-index: 6;
+        border-bottom: 1px solid  #4b433d;
+    }
+
+    .hamburger {
+        display: inherit;
+    }
+
+    .nav-collapse {
+        display: none;
+    }
+
+    .flex-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slick-carousel {
+        width: 90%;
+    }
+
+    #about {
+        height: auto;
+    }
+
+    .tile {
+        width: 100%;
+        padding: 0;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-visual {
+        height: 20em;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .project-details {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+}
