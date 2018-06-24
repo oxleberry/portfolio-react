@@ -5,7 +5,7 @@ class Header extends Component {
   render() {
     return (
       <header>
-			<h1 className="textST">CREATIVE CODING HIGHLIGHTS</h1>
+			<h2 className="textST">CODING PROJECT HIGHLIGHTS</h2>
       </header>
     );
   }

@@ -7,18 +7,19 @@ import Nav from './Nav.js';
 import Header from './Header.js';
 import ProjectList from './ProjectList.js';
 import Footer from './Footer.js';
-
+import Thanks from './Thanks.js';
 
 class App extends Component {
   render() {
     return (
       <div>
          <Nav />
-         <div class="container websiteST">
+         <main class="websiteST">
             <Header />
             <ProjectList />
-            <Footer />                
-         </div>
+            <Footer />
+         </main>
+         <Thanks />
       </div>
     );
   }

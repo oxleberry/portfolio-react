@@ -16,14 +16,6 @@ class Nav extends Component {
                      <a className="nav-link" href="http://www.oxleberry.com/index.html">Portfolio</a>
                   </li>
                   <li className="nav-item oxleNav">
-                     <a className="nav-link" href="http://www.oxleberry.com/interactive/starterpage/sp0.html">
-                     Creative Coding</a>
-                  </li>
-                  <li className="nav-item oxleNav">
-                     <a className="nav-link" href="http://www.oxleberry.com/cookiestamps/cs01.html">
-                     Art Projects</a>
-                  </li>
-                  <li className="nav-item oxleNav">
                      <a className="nav-link" href="http://www.oxleberry.com/about/ap0.html">
                      About</a>
                   </li>

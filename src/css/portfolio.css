@@ -1,29 +1,29 @@
 
-
+/*
 body {
     background-color: #e9e4de ;
-}
+} */
 
 .textST{
    background: #fff;
-   background-image: linear-gradient(#fff, #e9e4de);
+   background: linear-gradient(#fff, #e9e4de);
    border: 2px solid #a38b77;
    border-radius: .4em;
    padding: .4em;
    margin: 0;
    font-family: 'Baloo', sans-serif;
 	color: #512b05;
+   font-size: 2.5em;
 }
 
 .websiteST {
-    margin: 60px auto;
-    background: #fff;
-    max-width: 1000px;
-    padding: 40px;
-    -webkit-box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.4);
-            box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.4);
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+   margin: 20em auto 21em;
+   background: #fff;
+   background: linear-gradient(to bottom, rgba(233,228,222,0),rgba(255,255,255,1) 5%);
+   max-width: 1000px;
+   padding: 40px;
+   box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.4);
+   box-sizing: border-box;
 }
 
 hr {
@@ -49,44 +49,47 @@ hr {
 /*	font-family: "Century Gothic", "Helvetica", sans-serif;	*/
 }
 
-/*	RED	*/
+/* #ab2f52
+#e55c49
+#ffaf52  */
+/*	PROJECT 1	*/
 .color-border:nth-child(4n+1) {
    margin-left: 30px;
-   border-left: 8px solid #d25348;
+   border-left: 8px solid #3c7db3;
 }
 .borderLeft:nth-child(4n+1) .projHeadline,
 .borderLeft:nth-child(4n+1) .techUsed,
 .borderLeft:nth-child(4n+1) .btn-github {
-   color: #d25348;
+   color: #3c7db3;
    font-weight: 600;
 }
 
-/*	PURPLE	*/
+/*	PROJECT 2	*/
 .color-border:nth-child(4n+2) {
    margin-left: 30px;
-   border-left: 8px solid #693776;
+   border-left: 8px solid #37c3a2;
 }
 .borderLeft:nth-child(4n+2) .projHeadline,
 .borderLeft:nth-child(4n+2) .techUsed,
 .borderLeft:nth-child(4n+2) .btn-github {
-   color: #693776;
+   color: #37c3a2;
    font-weight: 600;
 }
 
-/*	BLUE	*/
+/*	PROJECT 3	*/
 .color-border:nth-child(4n+3) {
    margin-left: 30px;
-   border-left: 8px solid #3691a5;
+   border-left: 8px solid #424871;
 }
 .borderLeft:nth-child(4n+3) .projHeadline,
 .borderLeft:nth-child(4n+3) .techUsed,
 .borderLeft:nth-child(4n+3) .btn-github {
-   color: #3691a5;
+   color: #424871;
    font-weight: 600;
 }
 
 /*	ORANGE	*/
-.color-border:nth-child(4n+4) {
+/* .color-border:nth-child(4n+4) {
    margin-left: 30px;
    border-left: 8px solid #e88932;
 }
@@ -95,7 +98,7 @@ hr {
 .borderLeft:nth-child(4n+4) .btn-github {
    color: #e88932;
    font-weight: 600;
-}
+} */
 
 
 

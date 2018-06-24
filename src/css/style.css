@@ -9,8 +9,10 @@ body {
     padding: 0;
     font-family: 'Lato', sans-serif;
     text-align: center;
-    color: #fff;
-    background-color: #382530;
+    color: #512b05;
+    background-color: #e9e4de;
+    /* background-color: #f1f9fb; */
+    /* background-color: #f4fbf1;    */
 }
 
 section {
@@ -23,14 +25,14 @@ li {
 }
 
 p {
-    text-transform: none;
+    /* text-transform: none; */
     line-height: 1.5em;
 }
 
-h2 {
+/* h2 {
     letter-spacing: .8em;
     margin-bottom: 0;
-}
+} */
 
 a {
     text-decoration: none;
@@ -38,9 +40,9 @@ a {
     font-size: 1.1em;
 }
 
-a:hover, .active {
+/* a:hover, .active {
     color: #e0b3a3;
-}
+} */
 
 /* button {
     padding: 1em 2em;
@@ -100,6 +102,60 @@ a.nav-link {
    padding-right: 1rem;
 }
 
+/* ANIMATIONS ========================================= */
+
+.ani-top {
+   opacity: 0;
+   margin-top: 4em;
+   position: fixed;
+   z-index: -2;
+   top: 0;
+   left: calc(50vw - 144px);
+   animation: reveal 1s linear forwards .4s;
+}
+@keyframes reveal {
+  100% {
+    opacity: 1;
+  }
+}
+
+.icon svg {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: line 8s linear forwards .4s;
+}
+@keyframes line {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+svg path {
+   stroke: #4F2D11;
+   fill: rgba(255,255,255,0);
+   animation: aniOutline 1s linear forwards 6s;
+}
+/* @keyframes aniOutline {
+  100% {
+   stroke: #e9e4de;
+   stroke-width: 0;
+   fill: #00808c;
+   fill: rgba(255,255,255,.3);
+  }
+} */
+
+svg .mon-face {
+   fill: rgba(79, 45, 17, 1);
+}
+svg .mon-face {
+   fill: rgba(79, 45, 17, 1);
+   animation: aniFace 1s linear forwards 6s;
+}
+/* @keyframes aniFace {
+  to {
+   fill: rgba(255,255,255,1);
+  }
+} */
 /* ABOUT ========================================= */
 
 
@@ -126,9 +182,9 @@ main img {
 }
 
 .btn-github {
-   background: #fff;
-   background-image: linear-gradient(#fff, #e9e4de);
-   border: 2px solid #a38b77;
+   background-color: #e9e4de;
+   background-image: linear-gradient(#f3f3f3, #e9e4de);
+   border: 2px solid #fff;
    border-radius: .6em;
    padding: .7em 1.4em;
    /* margin-top: .2em; */
@@ -136,7 +192,16 @@ main img {
    text-transform: uppercase;
    font-size: 1.3em;
    font-family: 'Baloo', sans-serif;
+   transition: border-color .3s ease;
+
 }
+
+.btn-github:hover {
+   /* background: #fff;
+   background-image: linear-gradient(#fff, #e9e4de); */
+   border-color: #a38b77;
+}
+
 
 .projDetails {
    padding: 3em 0;
@@ -145,7 +210,7 @@ main img {
 /* FOOTER ========================================= */
 
 footer a {
-    font-size: 2em;
+    font-size: 1.8em;
     padding: 1.2em 1em 0;
 }
 
@@ -159,8 +224,23 @@ footer {
    padding: 1.2em 1em 0;
 }
 
-/* ANIMATIONS ========================================= */
+/* THANKS ========================================= */
 
+.thanks {
+   width: 400px;
+   /* background-color: #e9e4de; */
+   z-index: -2;
+   margin-bottom: 5em;
+   position: fixed;
+   top: 60vh;
+   left: calc(50vw - 200px);
+}
+
+.thanks img {
+   margin-top: 1em;
+   height: 10em;
+   border-radius: 1.8em;
+}
 
 /* MEDIA QUERIES ========================================= */
 
@@ -169,7 +249,7 @@ footer {
         font-size: 12pt;
     } */
 
-    header nav {
+    /* header nav {
         height: auto;
     }
 
@@ -185,9 +265,9 @@ footer {
     header nav div {
         background-image: linear-gradient(#645951, #786862);
         border-bottom: 1px solid #4b433d;
-    }
+    } */
 
-    .nav-logo {
+    /* .nav-logo {
         z-index: 6;
         border-bottom: 1px solid  #4b433d;
     }
@@ -211,8 +291,8 @@ footer {
 
     #about {
         height: auto;
-    }
-
+    } */
+/*
     .tile {
         width: 100%;
         padding: 0;
@@ -230,15 +310,15 @@ footer {
         height: 20em;
         width: 80%;
         margin: 0 auto;
-    }
+    } */
 
     /* .project-details {
         width: 100%;
     } */
 
-    form {
+    /* form {
         width: 100%;
-    }
+    } */
 }
 
 
@@ -252,7 +332,7 @@ footer {
 	} */
 
 
-.spaceMore  {
+/* .spaceMore  {
 	font-family: 'Baloo', sans-serif;
 	padding-top: 90px;
 	padding-bottom: 10px;
@@ -262,7 +342,7 @@ footer {
 	font-family: 'Baloo', sans-serif;
 	padding-top: 25px;
 	padding-bottom: 10px;
-	}
+	} */
 
 
 .space {
