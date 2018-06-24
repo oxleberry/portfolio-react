@@ -7,120 +7,68 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
     color: #fff;
-    text-transform: uppercase;
     background-color: #382530;
 }
 
 section {
-    overflow: hidden;
-    padding: 3em;
-}
-
-section:nth-child(2n + 1) {
-    background-color: #514740;
-}
-
-section:nth-child(2n + 0) {
-    background-color: #382530;
+    padding: 0 2em;
 }
 
 li {
     list-style: none;
     line-height: 1.4em;
-    letter-spacing: 0.1em;
 }
 
 p {
     text-transform: none;
     line-height: 1.5em;
-    letter-spacing: 1px;
 }
 
 h2 {
     letter-spacing: .8em;
+    margin-bottom: 0;
 }
 
 a {
     text-decoration: none;
     color: #fff;
+    font-size: 1.1em;
 }
 
 a:hover, .active {
     color: #e0b3a3;
 }
 
-button {
+/* button {
     padding: 1em 2em;
     text-transform: uppercase;
-    font-size: 1.6em;
+    font-size: 1em;
     background-color: rgba(255, 255, 255, 0.2);
     color: #3f3732;
     font-weight: bold;
+    border-radius: 1em;
+} */
+
+.oxle-row {
+   display: flex;
+   flex-direction: row;
 }
 
-col-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.hide {
-    display: none;
-}
-
-.opacity {
-    opacity: 0;
-}
-
-.show {
-    display: block;
+.flex-wrap {
+   display: flex;
+   justify-content: space-between;
 }
 
 /* HEADER ========================================= */
 
-header {
-    height: 100vh;
-    background-color: transparent;
-}
-
-nav-collapse {
-    display: block;
-}
-
-header nav {
-    z-index: 1;
-    background: #645951;
-    height: 4em;
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    margin: 0 auto;
-    width: 100vw;
-    box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, .2);
-}
-
-header nav a {
-    padding: 1.4em 2.5em;
-}
-
-.nav-left {
-    float: left;
-}
-
-.nav-right {
-    float: right;
-}
-
-.nav-logo {
-    left: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
-    z-index: -2;
-    font-weight: 900;
+.oxle-logo {
+   font-family: 'Baloo', sans-serif;
+   font-size: 28px;
+   /* letter-spacing: 1px; */
+   padding: 0.1em 1em 0 1em;
 }
 
 .outer {
@@ -128,16 +76,11 @@ header nav a {
     justify-content: space-between;
 }
 
-header h1 {
-    margin-top: 3em;
-    font-size: 5em;
-}
-
 ul {
     padding-left: 0;
 }
 
-.bg-box {
+/* .bg-box {
     position: relative;
     height: 100vh;
     top: 40px;
@@ -146,293 +89,85 @@ ul {
     background-attachment: fixed;
     background-size: cover;
     overflow: hidden;
+} */
+
+nav.brown {
+	background-color: #512b05;
 }
 
-.midground {
-    height: 100px;
-    width: 100%;
-    background-image: url('/images/SP_title.png');
-    background-size: 22em;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-    margin-top: -50px;
-    filter: invert(100%);
-}
-
-.foreground {
-    width: 100%;
-    height: 25em;
-    background-image: url('/images/flower_sakura.svg');
-    background-size: 35em;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 14%;
-    top: 31em;
-    filter: invert(100%) blur(2px);
-}
-
-.background {
-    width: 100%;
-    height: 8em;
-    background-image: url('/images/flower_geo.svg');
-    background-size: 5em;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: -25%;
-    top: 12em;
-    filter: invert(100%) blur(1px);
-}
-
-/* CAROUSEL ========================================= */
-
-.slick-carousel {
-    width: 70%;
-    margin: 0 auto;
-    height: 50%;
-    padding: 2em;
-}
-
-.slick-carousel a {
-    width: 100%;
-    padding: 0;
-}
-
-.slick-carousel img {
-    width: 100%;
-}
-
-.slick-dots {
-    left: 0;
-}
-
-.slick-next:before,
-.slick-prev:before {
-    font-size: 27px;
-    opacity: .3;
+a.nav-link {
+   margin-top: .2em;
+   padding-right: 1rem;
 }
 
 /* ABOUT ========================================= */
 
-#about h5 {
-    margin: 0 auto;
-    text-transform: none;
-    padding: 2em 4em;
-    font-size: 1.4em;
-}
-
-#about h2 {
-}
-
-#about {
-    height: 100vh;
-    margin: 0 auto;
-}
-
-#about div div{
-    font-size: 1.5em;
-    align-self: center;
-}
-
-#about img {
-    margin: 1em;
-    filter: invert(100%);
-}
-
-.about-bg-box {
-    position: relative;
-    height: 106vh;
-    top: -5em;
-    width: 100vw;
-    left: -3em;
-    background: url('/images/abstract-art-astronomy-220071.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    overflow: hidden;
-}
-
-.about-foreground {
-    width: 100%;
-    height: 25em;
-    background-image: url('/images/flower_sakura.svg');
-    background-size: 35em;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 14%;
-    top: 61em;
-    filter: invert(100%) blur(2px);
-    z-index: -1;
-}
 
 /* PROJECTS ========================================= */
 
-.project-container {
-    display: flex;
-    flex-direction: row;
-    padding-top: 2em;
-    justify-content: center;
+.col-container-left {
+   display: flex;
+   flex-direction: column;
+   width: 65%;
+   justify-content: space-around;
 }
 
-.project-visual {
-    display: flex;
-    flex-direction: column;
-    margin-right: .4em;
-    width: 33%;
+.col-container-right {
+   display: flex;
+   flex-direction: column;
+   width: 35%;
+   justify-content: space-around;
 }
 
-.project-visual img {
-    max-width: 80%;
-    margin: 2px;
+main img {
+   width: 100%;
+   /* padding-bottom: 2em; */
+   padding-right: 2em;
 }
 
-.project-img {
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    margin: 2px auto;
+.btn-github {
+   background: #fff;
+   background-image: linear-gradient(#fff, #e9e4de);
+   border: 2px solid #a38b77;
+   border-radius: .6em;
+   padding: .7em 1.4em;
+   /* margin-top: .2em; */
+	color: #512b05;
+   text-transform: uppercase;
+   font-size: 1.3em;
+   font-family: 'Baloo', sans-serif;
 }
 
-/* IMG SIZE = 800 x 500 */
-.img1 {
-    background: url('/images/proj4_caro.png') top center;
-    background-size: cover;
+.projDetails {
+   padding: 3em 0;
 }
-.img2 {
-    background: url('/images/shopping-cart-img1.png') top right;
-    background-size: cover;
-}
-.img3 {
-    background: url('/images/monument-img1.png') top center;
-}
-
-.project-details {
-    width: 70%;
-    height: 80%;
-    background-color: transparent;
-    border-radius: 2em;
-    padding: 1em;
-    color: #fff;
-}
-
-#project2 button{
-    color: #33222b;
-}
-
-.detail-container {
-    display: flex;
-    margin: 0 auto;
-    height: 100%;
-    width: 80%;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.detail-container ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.detail-container li {
-    padding: 0 1em;
-    font-size: 1.2em;
-}
-
-
-/* TESTAMONIALS========================================= */
-
-#about, #testamonials {
-    background: url('/images/abstract-art-astronomy-220071.jpg');
-}
-
-#testamonials {
-    min-height: 20em;
-}
-
-#testamonials h3{
-    font-size: 3em;
-    font-family: 'Averia Libre', sans-serif;
-}
-
-#testamonials p{
-    font-size: 1.5em;
-    font-family: 'Averia Libre', sans-serif;
-}
-
-/* CONTACT ========================================= */
-
-#contact {
-    background-color: #382530;
-}
-
-form {
-    display: inline-block;
-    width: 40em;
-}
-
-.contact .row div {
-    width: 100%;
-}
-
-.contact .row {
-    padding: 2em;
-}
-
-input, textarea {
-    margin: .5em auto;
-    padding: 1em 1em;
-    font-weight: bold;
-    border: 2px solid transparent;
-    background-color: rgba(255, 255, 255, .5);
-    color: #514740;
-    width: 100%;
-}
-
-textarea {
-    height: 200px;
-}
-
-.contact-button {
-    width: 100px;
-}
-
-input::placeholder, textarea::placeholder {
-  color: #514740
-}
-
 
 /* FOOTER ========================================= */
 
-footer {
-    padding: 1em;
-    position: relative;
-    background: url('/images/abstract-art-astronomy-220071.jpg');
-    background-position: top;
-    background-size: cover;
-}
-
 footer a {
     font-size: 2em;
-    padding: 1.4em 1em;
+    padding: 1.2em 1em 0;
+}
+
+/* bg-footer {
+   margin-top: 2em;
+   padding: 1.2em 1em 0;
+} */
+
+footer {
+   margin-top: 2em;
+   padding: 1.2em 1em 0;
 }
 
 /* ANIMATIONS ========================================= */
 
-@keyframes spinner {
-    100% { transform: rotate(360deg); }
-}
 
 /* MEDIA QUERIES ========================================= */
 
 @media screen and (max-width: 800px){
-    html {
+    /* html {
         font-size: 12pt;
-    }
+    } */
 
     header nav {
         height: auto;
@@ -497,11 +232,140 @@ footer a {
         margin: 0 auto;
     }
 
-    .project-details {
+    /* .project-details {
         width: 100%;
-    }
+    } */
 
     form {
         width: 100%;
     }
+}
+
+
+/* _____ */
+/* body {
+
+	font-family: "Helvetica", sans-serif;
+	text-align: center;
+	color: #512b05;
+	margin: auto;
+	} */
+
+
+.spaceMore  {
+	font-family: 'Baloo', sans-serif;
+	padding-top: 90px;
+	padding-bottom: 10px;
+	}
+
+.spaceSmall  {
+	font-family: 'Baloo', sans-serif;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	}
+
+
+.space {
+	padding-bottom: 12px;
+}
+
+.captions{
+	color: #a38b77;
+	font-size: 13px;
+}
+
+
+.purple {
+	background-color: #7a5e7c;
+/*	background-color: #5e3a66;*/
+}
+
+/* .white{
+	color: white;
+} */
+
+.ltBrown{
+	color: #a38b77;
+}
+
+
+/* CAROUSEL */
+.outerCarousel{
+	height: 400px;
+	width: 100%;
+}
+.innerCarousel{
+	margin-left: auto;
+	margin-right: auto;
+	height: 400px;
+	width: auto;
+}
+
+.homeSlideshow{
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;
+	width: auto;
+}
+
+.text {
+	font-family: 'Baloo', sans-serif;
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*li{
+	float: left;
+  	list-style: none;
+	padding: 0px 36px 0px 0px;
+	font-family: "Century Gothic", "Helvetica", sans-serif;
+}*/
+
+li.oxleNav{
+	float: left;
+  	list-style: none;
+	padding: 0px 26px 0px 0px;
+	font-family: "Century Gothic", "Helvetica", sans-serif;
+}
+
+/* FOR CARD COLUMNS */
+@media only screen and (min-width: 576px) {
+	.card-columns {
+	    column-count: 2;
+  	}
+}
+
+@media only screen and (min-width: 768px) {
+	.card-columns {
+	    column-count: 3;
+  	}
+}
+
+@media only screen and (min-width: 992px) {
+	.card-columns {
+	    column-count: 4;
+  	}
+}
+
+
+/* #footer{
+	color: #a38b77;
+	font-size: 11px;
+	padding-bottom: 14px;
+} */
+
+a:link {
+    color: #a38b77;
+}
+
+a:visited {
+    color: #a38b77;
+}
+
+a:hover {
+	color: #dd6700;
+	text-decoration: none;
 }

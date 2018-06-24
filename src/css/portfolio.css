@@ -1,0 +1,109 @@
+
+
+body {
+    background-color: #e9e4de ;
+}
+
+.textST{
+   background: #fff;
+   background-image: linear-gradient(#fff, #e9e4de);
+   border: 2px solid #a38b77;
+   border-radius: .4em;
+   padding: .4em;
+   margin: 0;
+   font-family: 'Baloo', sans-serif;
+	color: #512b05;
+}
+
+.websiteST {
+    margin: 60px auto;
+    background: #fff;
+    max-width: 1000px;
+    padding: 40px;
+    -webkit-box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0px 20px 60px -20px rgba(0, 0, 0, 0.4);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+hr {
+	margin: 0;
+}
+
+.projHeadline {
+	text-align: left;
+	line-height: 2.5rem;
+	/* padding-bottom: 12px; */
+   letter-spacing: 1px;
+   font-size: 3em;
+   text-transform: uppercase;
+   font-weight: 900;
+   font-family: "Baloo", sans-serif;
+}
+
+.projText {
+	text-align: left;
+	line-height: 1.25rem;
+	color: #512b05;
+   max-width: 500px;
+/*	font-family: "Century Gothic", "Helvetica", sans-serif;	*/
+}
+
+/*	RED	*/
+.color-border:nth-child(4n+1) {
+   margin-left: 30px;
+   border-left: 8px solid #d25348;
+}
+.borderLeft:nth-child(4n+1) .projHeadline,
+.borderLeft:nth-child(4n+1) .techUsed,
+.borderLeft:nth-child(4n+1) .btn-github {
+   color: #d25348;
+   font-weight: 600;
+}
+
+/*	PURPLE	*/
+.color-border:nth-child(4n+2) {
+   margin-left: 30px;
+   border-left: 8px solid #693776;
+}
+.borderLeft:nth-child(4n+2) .projHeadline,
+.borderLeft:nth-child(4n+2) .techUsed,
+.borderLeft:nth-child(4n+2) .btn-github {
+   color: #693776;
+   font-weight: 600;
+}
+
+/*	BLUE	*/
+.color-border:nth-child(4n+3) {
+   margin-left: 30px;
+   border-left: 8px solid #3691a5;
+}
+.borderLeft:nth-child(4n+3) .projHeadline,
+.borderLeft:nth-child(4n+3) .techUsed,
+.borderLeft:nth-child(4n+3) .btn-github {
+   color: #3691a5;
+   font-weight: 600;
+}
+
+/*	ORANGE	*/
+.color-border:nth-child(4n+4) {
+   margin-left: 30px;
+   border-left: 8px solid #e88932;
+}
+.borderLeft:nth-child(4n+4) .projHeadline,
+.borderLeft:nth-child(4n+4) .techUsed,
+.borderLeft:nth-child(4n+4) .btn-github {
+   color: #e88932;
+   font-weight: 600;
+}
+
+
+
+.colorLtBrown {
+	color: #a38b77;
+}
+
+
+.underline {
+	list-style-type: none;
+}
