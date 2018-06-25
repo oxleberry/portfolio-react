@@ -26,8 +26,8 @@ class ProjectList extends Component {
       {
          title: 'Shopping Cart Challenge',
          description: `In this project, used vanilla javascript to access elements in the DOM. All the items in the shopping stores and shopping carts are dynamically created based on event listeners that when activated, pulls data from a JS object, and returns the corresponding information.`,
-         image: `images/proj2_caro.png`,
-         projectLink: ``,
+         image: `images/shopping-cart.png`,
+         projectLink: `https://github.com/oxleberry/oxleberry-webstore/tree/master/my-webstore`,
          gitHubLink: `https://github.com/oxleberry/oxleberry-webstore/tree/master/my-webstore`,
          skills: ['Vanilla JavaScript', 'DOM manipulation', 'Object Notation']
       }

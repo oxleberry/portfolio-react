@@ -10,7 +10,9 @@ class Project extends Component {
          <div className="projDetails borderTop">
             <div className="flex-wrap">
                <div className="col-container-left">
-                  <p className="projHeadline color-text">{this.props.project.title}</p>
+                  <a href={this.props.project.projectLink}>
+                     <p className="projHeadline color-text">{this.props.project.title}</p>
+                  </a>
                </div>
                <div className="col-container-right">
                   <p className="ltBrown">
@@ -28,7 +30,7 @@ class Project extends Component {
                </div>
                <div className="col-container-right">
                   <ul>
-                     <li className="ltBrown"> TECHNOLOGIES USED:</li>
+                     <li className="ltBrown list-space"> TECHNOLOGIES USED:</li>
                      <li className="techUsed"> {this.props.project.skills[0]}</li>
                      <li className="techUsed"> {this.props.project.skills[1]}</li>
                      <li className="techUsed"> {this.props.project.skills[2]}</li>

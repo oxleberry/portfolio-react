@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react';
 import './css/style.css';
-import './css/portfolio.css';
+// import './css/portfolio.css';
+
 
 import Nav from './Nav.js';
 import Header from './Header.js';
@@ -21,6 +22,7 @@ class App extends Component {
          </main>
          <Thanks />
       </div>
+
     );
   }
 }
